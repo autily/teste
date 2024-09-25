@@ -1,0 +1,44 @@
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Configurações de layout para tela de celular */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Forçar layout para telas menores, max-width de 768px */
+@media only screen and (min-width: 769px) {
+    body {
+        width: 375px; /* Largura típica de um celular, como iPhone */
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+}
